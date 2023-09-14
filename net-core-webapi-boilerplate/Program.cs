@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 using net_core_webapi_boilerplate.Data;
 

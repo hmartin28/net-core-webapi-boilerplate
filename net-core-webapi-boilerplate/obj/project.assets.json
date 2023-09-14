@@ -3060,11 +3060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hingy\\Desktop\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate.csproj",
+      "projectUniqueName": "C:\\Users\\hingy\\Code\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate.csproj",
       "projectName": "net-core-webapi-boilerplate",
-      "projectPath": "C:\\Users\\hingy\\Desktop\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate.csproj",
+      "projectPath": "C:\\Users\\hingy\\Code\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate.csproj",
       "packagesPath": "C:\\Users\\hingy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hingy\\Desktop\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate\\obj\\",
+      "outputPath": "C:\\Users\\hingy\\Code\\net-core-webapi-boilerplate\\net-core-webapi-boilerplate\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hingy\\AppData\\Roaming\\NuGet\\NuGet.Config",
