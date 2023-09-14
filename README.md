@@ -1,14 +1,44 @@
 # Boilerplate for ASP.NET Core WEB API
 
-1. Microsoft.EntityFrameworkCore
-2. Microsoft.EntityFrameworkCore.Design
-3. Microsoft.EntityFrameworkCore.SqlServer
-4. Microsoft.EntityFrameworkCore.Tools
-5. Swashbuckle.AspNetCore.Swagger
-6. Swashbuckle.AspNetCore.SwaggerUI
-7. Swashbuckle.AspNetCore.SwaggerGen
+## Installing the necessary packages
 
-Connection string example: "Server=servername;Initial Catalog=dbname;Trusted_Connection=True;Integrated Security=True;"
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+- Swashbuckle.AspNetCore.Swagger
+- Swashbuckle.AspNetCore.SwaggerUI
+- Swashbuckle.AspNetCore.SwaggerGen
 
-Add-Migration InitializeDatabase
-Update-Database
+## Creating the database context class
+
+> public [ContextFileName](DbContextOptions<[ContextFileName]> options) : base(options) { }
+>
+> public DbSet<[ModelFileName]> [ModeFileNames] { get; set; }
+
+## Creating a connection string in appsettings.json file 
+
+> "ConnectionStrings": {
+    "DefaultConnection": "Server=MARTIN;Initial Catalog=test;Trusted_Connection=True;Integrated Security=True;TrustServerCertificate=True;"
+}
+
+## Setting up the database context and connection string in the Program.cs file
+
+> builder.Services.AddDbContext<ApplicationDatabaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+## Initializing the database in the server
+
+> Add-Migration [MigrationName]
+> 
+> Update-Database
+
+## Setting up swagger in Program.cs (if necessary)
+
+> builder.Services.AddSwaggerGen();
+>
+> app.UseSwagger();
+>
+> app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "WEB API v1");
+});
