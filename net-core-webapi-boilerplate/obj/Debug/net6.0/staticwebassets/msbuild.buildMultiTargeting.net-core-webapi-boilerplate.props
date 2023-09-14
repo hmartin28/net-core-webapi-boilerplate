@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\net-core-webapi-boilerplate.props" />
+</Project>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AfmVvCH+FZasJpU3BpQR3GPfc8S1i/tmghjX8+feGzI=",
+  "Source": "net-core-webapi-boilerplate",
+  "BasePath": "_content/net-core-webapi-boilerplate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
