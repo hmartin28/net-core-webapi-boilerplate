@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\net-core-webapi-boilerplate.props" />
-</Project>
